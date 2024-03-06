@@ -94,9 +94,11 @@ let meyor = 25
 if (a.length > meyor){
     alert(`Siz ${meyor}ta belgidan iborat gap kiritishingiz mumkin. Lekin siz hozir ${a.length}ta 
     belgidan iborat gap kiritingiz. Bu meyordan ${a.length - meyor}ta ko'p `)
-}else{
+}if (a.length < meyor){
     alert(`Siz ${meyor}ta belgidan iborat gap kiritishingiz mumkin. Lekin siz hozir ${a.length}ta 
     belgidan iborat gap kiritingiz. Bu meyordan ${meyor - a.length}ta kam `)
+}else{
+    alert(`Salom Bu siz yozgan so\'zlar ${a}`)
 }
 
 
